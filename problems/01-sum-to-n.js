@@ -11,7 +11,13 @@ sumToN(9)  // returns 45
 sumToN(-8)  // returns null
 ***********************************************************************/
 
-// your code here
+const sumToN = num => {
+  //base case
+  if(num < 0) return null;
+  //recursive step and case
+  let sum = num + sumToN(num - 1);
+  return sum;
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
