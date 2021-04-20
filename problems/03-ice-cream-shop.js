@@ -13,7 +13,18 @@ iceCreamShop([], 'honey lavender'); // false
 ***********************************************************************/
 
 
-// your code here
+const iceCreamShop = (flavors, favorite) => {
+  //base
+  if(flavors.length === 0) {
+    return false;
+  }
+  //recursive case and step
+  if(flavors[0] === favorite) {
+    return true;
+  } else {
+    return iceCreamShop(flavors.slice(1), favorite);
+  }
+}
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
