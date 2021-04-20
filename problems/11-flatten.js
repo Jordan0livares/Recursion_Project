@@ -5,13 +5,28 @@ contents on one level.
 
 Examples:
 
-flatten([]); // []
-flatten([1, 2]); // [1, 2]
-flatten([1, [2, [3]]]); // [1, 2, 3]
+
 ***********************************************************************/
 
-// your code here
-  
+const flatten = nums => {
+  debugger
+  let result = [];
+
+  nums.forEach(ele => {
+    debugger
+    if (Array.isArray(ele)) {
+      result.push(...flatten(ele))
+    } else {
+      result.push(ele)
+    }
+  })
+  debugger
+  return result
+}
+
+console.log(flatten([])); // []
+console.log(flatten([1, 2])); // [1, 2]
+console.log(flatten([1, [2, [3]]])); // [1, 2, 3]
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = flatten;
