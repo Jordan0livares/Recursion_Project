@@ -10,8 +10,16 @@ sumArray([0, 1, -3]); //  -2
 sumArray([1, 2, 3, 4, 5]); // 15
 ***********************************************************************/
 
-// your code here
-  
+const sumArray = arr => {
+  //base
+  if(arr.length === 0) {
+    return null;
+  }
+  //recursive step and case
+  let sum = arr[0] + sumArray(arr.slice(1));
+  return sum;
+}
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = sumArray;
