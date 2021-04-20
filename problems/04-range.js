@@ -11,8 +11,15 @@ range(7, 6); // []
 ***********************************************************************/
 
 
-// your code here
+const range = (start, end) => {
+  if (end <= start) {
+    return [];
+  }
 
+  let arr = [start, ...range(start + 1, end)]
+
+  return arr
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
