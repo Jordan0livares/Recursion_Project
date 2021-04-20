@@ -23,12 +23,12 @@ const reverse = string => {
   return result;
 }
 
-console.loge(reverse("house")); // "esuoh"
-console.loge(reverse("dog")); // "god"
-console.loge(reverse("atom")); // "mota"
-console.loge(reverse("q")); // "q"
-console.loge(reverse("id")); // "di"
-console.loge(reverse("")); // ""
+console.log(reverse("house")); // "esuoh"
+console.log(reverse("dog")); // "god"
+console.log(reverse("atom")); // "mota"
+console.log(reverse("q")); // "q"
+console.log(reverse("id")); // "di"
+console.log(reverse("")); // ""
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
