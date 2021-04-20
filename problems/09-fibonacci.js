@@ -19,12 +19,36 @@ fibonacci(4); // 3
 fibonacci(10); // 55
 ***********************************************************************/
 
-// your code here
-  
+const fibonacci = num => {
+  debugger;
+  if(num === 1 || num === 2) {
+    debugger;
+    return 1;
+  }
+  debugger;
+  let sum = fibonacci(num - 1) + fibonacci(num - 2);
+  return sum;
+}
+
+// const fibonacci = (num) => {
+//   if(num === 0) {
+//     debugger
+//     return [0, 1];
+//   }
+//   let sum = [...fibonacci(num - 1) + num];
+//   debugger
+//   return sum[sum.length - 1];
+// }
+
+// fibonacci(1); // 1
+// fibonacci(2); // 1
+// fibonacci(3); // 2
+fibonacci(4); // 3
+// fibonacci(10); // 55
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = fibonacci;
 } catch (e) {
   module.exports = null;
 }
-  

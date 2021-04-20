@@ -41,8 +41,19 @@ times `advancedExponent` is being recursively called.
 
 
 function advancedExponent(b, n) {
-  // your code here
-}
+    debugger
+    if(n === 0) {
+      return 1;
+    }
+    if(n === 1) {
+      return b;
+    }
+    if (n > 0) {
+      debugger
+      let pos = b * advancedExponent(b, n - 1)
+      return pos
+    }
+  }
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
